@@ -13,7 +13,7 @@ import {
 } from './NavbarElements'
 
 
-const Navbar = () => {
+const Navbar = ({toggle}) => {
     return (
         <>
         <Nav>
@@ -21,7 +21,7 @@ const Navbar = () => {
                 <NavLogo to="/">
                     TEN
                 </NavLogo>
-                <MobileIcon>
+                <MobileIcon onClick={toggle}>
                     {/* <FaShoppingCart /> */}
                     <FaBars />
                 </MobileIcon>
@@ -39,11 +39,11 @@ const Navbar = () => {
                             <NavLinks to="more">More</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="more">Login/Sign-up</NavLinks>
+                            <NavLinks to="signup">Login/Sign-up</NavLinks>
                         </NavItem>
                 </NavMenu>
                 <NavBtn>
-                    <NavBtnLink to="/signup">Sign in</NavBtnLink>
+                    <NavBtnLink to="/login">Sign in</NavBtnLink>
                 </NavBtn>
             </NavbarContainer>
         </Nav>
