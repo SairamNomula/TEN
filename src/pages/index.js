@@ -4,7 +4,9 @@ import Navbar from '../components/Navbar'
 import Sidebar from '../components/Sidebar'
 import Banner from '../components/Banner'
 import InfoSection from '../components/InfoSection'
-import {infoObjOne} from '../components/InfoSection/Data'
+import {infoObjOne, infoObjTwo, infoObjThree} from '../components/InfoSection/Data'
+import Benefits from '../components/Benefits'
+import Footer from '../components/Footer'
 
 const Home = () => {
 
@@ -21,6 +23,10 @@ const Home = () => {
             <HeroSection />
             <Banner />
             <InfoSection {...infoObjOne}/>
+            <InfoSection {...infoObjTwo}/>
+            <InfoSection {...infoObjThree}/>
+            <Benefits />
+            <Footer />
         </>
     )
 }

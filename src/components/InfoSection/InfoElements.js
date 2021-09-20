@@ -11,7 +11,7 @@ export const InfoContainer = styled.div `
 
 export const InfoWrapper = styled.div`
     display: grid;
-    height: 860px;
+    height: 530px;
     width: 100%;
     max-width: 1100px;
     margin-right: auto;
@@ -33,13 +33,13 @@ export const InfoRow = styled.div`
 `
 
 export const Column1 = styled.div`
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     padding: 0 15px;
     grid-area: col1;
 `
 
 export const Column2 = styled.div`
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     padding: 0 15px;
     grid-area: col2;
 `
@@ -56,15 +56,15 @@ export const TopLine = styled.p`
     font-weight: 700;
     letter-spacing: 1.4px;
     text-transform: none;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 `
 
 export const Heading = styled.h1`
-    margin-bottom: 24px;
+    margin-bottom: 20px;
     font-size: 48px;
     line-height: 1.1;
     font-weight: 700;
-    color: ${({lightText}) => (lightText ? '#e81038' : '#fff')};
+    color: ${({lightText}) => (lightText ? '#e81038' : '#000')};
 
     @media screen and (max-width: 480px){
         font-size: 32px;
@@ -73,7 +73,7 @@ export const Heading = styled.h1`
 
 export const Subtitle = styled.p`
     max-width: 440px;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
     font-size: 18px;
     line-height: 24px;
     color: ${({lightText}) => (lightText ? '#e81038' : '#fff')};
