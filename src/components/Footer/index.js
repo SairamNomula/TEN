@@ -16,20 +16,20 @@ const Footer = () => {
                     <FooterLinksWrapper>
                         <FooterLinkItems>
                             <FooterLinkTitle>About us</FooterLinkTitle>
-                                <FooterLink to="/signin">Courses</FooterLink>
-                                <FooterLink to="/signin">Testimonials</FooterLink>
-                                <FooterLink to="/signin">Careers</FooterLink>
-                                <FooterLink to="/signin">Terms & Conditions</FooterLink>
+                                <FooterLink to="/login">Courses</FooterLink>
+                                <FooterLink to="/login">Testimonials</FooterLink>
+                                <FooterLink to="/login">Careers</FooterLink>
+                                <FooterLink to="/login">Terms & Conditions</FooterLink>
                         </FooterLinkItems>
                     </FooterLinksWrapper>
 
                     <FooterLinksWrapper>
                         <FooterLinkItems>
                             <FooterLinkTitle>Contact</FooterLinkTitle>
-                                <FooterLink to="/signin">Contact</FooterLink>
-                                <FooterLink to="/signin">Support</FooterLink>
-                                <FooterLink to="/signin">Sponsor</FooterLink>
-                                <FooterLink to="/signin">Agency</FooterLink>
+                                <FooterLink to="/login">Contact</FooterLink>
+                                <FooterLink to="/login">Support</FooterLink>
+                                <FooterLink to="/login">Sponsor</FooterLink>
+                                <FooterLink to="/login">Agency</FooterLink>
                         </FooterLinkItems>
                     </FooterLinksWrapper>
 

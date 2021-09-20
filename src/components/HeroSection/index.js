@@ -29,7 +29,7 @@ const HeroSection = () => {
             <HeroP>A world of knowledge at your fingertips.
                 <br />Learning together from the comfort of your home.</HeroP>
             <HeroBtnWrapper>
-                <Button to="about" onMouseEnter={onHover} onMouseLeave={onHover} primary="true" dark="true">Learn more</Button>
+                <Button to="/login" onMouseEnter={onHover} onMouseLeave={onHover} primary="true" dark="true">Learn more</Button>
             </HeroBtnWrapper>
         </HeroContent>
         </HeroContainer>

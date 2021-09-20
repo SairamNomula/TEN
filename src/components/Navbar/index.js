@@ -1,5 +1,7 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import {FaBars, FaShoppingCart} from 'react-icons/fa'
+import { IconContext } from 'react-icons/lib'
+import {animateScroll as scroll} from 'react-scroll'
 import {
     Nav, 
     NavbarContainer, 
@@ -14,11 +16,32 @@ import {
 
 
 const Navbar = ({toggle}) => {
+
+    const [scrollNav, setScrollNav] = useState(false)
+
+    const changeNav = () => {
+        if(window.scrollY >= 80){
+            setScrollNav(true)
+        }
+        else {
+            setScrollNav(false)
+        }
+    }
+
+    useEffect(() => {
+        window.addEventListener('scroll', changeNav);
+    }, []);
+
+    const toggleHome = () => {
+        scroll.scrollToTop()
+    }
+
     return (
         <>
-        <Nav>
+        <IconContext.Provider value={{color: '#e81038'}}>
+        <Nav scrollNav={scrollNav}>
             <NavbarContainer>
-                <NavLogo to="/">
+                <NavLogo to="/" onClick={toggleHome}>
                     TEN
                 </NavLogo>
                 <MobileIcon onClick={toggle}>
@@ -27,19 +50,37 @@ const Navbar = ({toggle}) => {
                 </MobileIcon>
                 <NavMenu>
                         <NavItem>
-                            <NavLinks to="home">Home</NavLinks>
+                            <NavLinks to="home" 
+                            smooth={true}
+                            duration={500}
+                            spy={true}
+                            exact='true'
+                            offset={-80}
+                            >Home</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="online">Online Courses</NavLinks>
+                            <NavLinks to="online"
+                            smooth={true}
+                            duration={500}
+                            spy={true}
+                            exact='true'
+                            offset={-80}>Online Courses</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="hiring">We are Hiring</NavLinks>
+                            <NavLinks to="hiring"
+                            smooth={true}
+                            duration={500}
+                            spy={true}
+                            exact='true'
+                            offset={-80}>We are Hiring</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="more">More</NavLinks>
-                        </NavItem>
-                        <NavItem>
-                            <NavLinks to="signup">Login/Sign-up</NavLinks>
+                            <NavLinks to="more"
+                            smooth={true}
+                            duration={500}
+                            spy={true}
+                            exact='true'
+                            offset={-80}>More</NavLinks>
                         </NavItem>
                 </NavMenu>
                 <NavBtn>
@@ -47,6 +88,7 @@ const Navbar = ({toggle}) => {
                 </NavBtn>
             </NavbarContainer>
         </Nav>
+        </IconContext.Provider>
         </>
     )
 }
