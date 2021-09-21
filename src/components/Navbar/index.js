@@ -50,7 +50,7 @@ const Navbar = ({toggle}) => {
                 </MobileIcon>
                 <NavMenu>
                         <NavItem>
-                            <NavLinks to="home" 
+                            <NavLinks to="/" 
                             smooth={true}
                             duration={500}
                             spy={true}
@@ -59,7 +59,7 @@ const Navbar = ({toggle}) => {
                             >Home</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="online"
+                            <NavLinks to="/online"
                             smooth={true}
                             duration={500}
                             spy={true}
@@ -67,7 +67,7 @@ const Navbar = ({toggle}) => {
                             offset={-80}>Online Courses</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="hiring"
+                            <NavLinks to="/hiring"
                             smooth={true}
                             duration={500}
                             spy={true}
@@ -75,7 +75,7 @@ const Navbar = ({toggle}) => {
                             offset={-80}>We are Hiring</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="more"
+                            <NavLinks to="/more"
                             smooth={true}
                             duration={500}
                             spy={true}

@@ -1,4 +1,5 @@
 import React from 'react'
+import {animateScroll as scroll} from 'react-scroll'
 import {
     FooterContainer,
     FooterLink,
@@ -9,6 +10,9 @@ import {
     FooterWrap
 } from './FooterElements'
 const Footer = () => {
+    const toggleHome = () => {
+        scroll.scrollToTop()
+    }
     return (
         <FooterContainer>
             <FooterWrap>
