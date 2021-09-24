@@ -1,0 +1,28 @@
+.testimonials .slick-arrow.slick-prev,
+.testimonials .slick-arrow.slick-next {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  border-radius: 5px;
+}
+.slick-prev::before,
+.slick-next::before {
+  display: none;
+}
+.slick-arrow.slick-next {
+  right: -70px;
+}
+.slick-arrow.slick-prev {
+  left: -70px;
+}
+.testimonials .slick-dots li button:before {
+  font-size: 15px;
+  color: #e81038;
+}
+.testimonials .slick-dots li {
+  top: 15px;
+  color: #e81038;
+}
