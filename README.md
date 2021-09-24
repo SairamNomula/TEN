@@ -1,4 +1,23 @@
-# Getting Started with Create React App
+# TEN
+### A world of knowledge at your fingertips.Learning together from the comfort of your home.
+### Technologies used
+    * ReactJs
+    * HTML5
+    * CSS
+    * Javascript
+## Screenshots:
+### Landing page:
+![image](https://user-images.githubusercontent.com/78247889/134622227-1ec1771b-96c4-41db-b22c-0aeb4eb63e83.png)
+### Benefits page:
+![image](https://user-images.githubusercontent.com/78247889/134622528-13e6a1d7-59b5-4f5e-a1f5-b6267982f304.png)
+### Login page:
+![login](https://user-images.githubusercontent.com/78247889/134622608-8fd5e7c1-35d9-4f46-a014-3b4bbfdcb00f.png)
+### Mobile view:
+![image](https://user-images.githubusercontent.com/78247889/134622695-8a550121-3dc8-432f-9009-af23c304bf82.png)
+### Testimonials and Footer:
+![image](https://user-images.githubusercontent.com/78247889/134622761-b7626f72-5ecb-4661-b869-17683002b1aa.png)
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
