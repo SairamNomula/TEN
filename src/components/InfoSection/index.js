@@ -41,7 +41,7 @@ const InfoSection = ({
                             <Heading lightText={lightText}>{heading}</Heading>
                             <Subtitle darkText={darkText}>{description}</Subtitle>
                             <BtnWrap>
-                                <Button to="online" 
+                                <Button id="online" 
                                 smooth={true}
                                 duration={500}
                                 spy={true}

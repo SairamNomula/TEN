@@ -5,8 +5,8 @@ import {Link as LinkScroll} from 'react-scroll'
 
 export const Nav = styled.nav`
     background: ${({scrollNav}) => (scrollNav ? '#5f5f5f' : '#fff')};
-    height: 65px;
-    margin-top: -65px;
+    height: 75px;
+    margin-top: -75px;
     display: flex;
     justify-content: center;
     align-items: center;

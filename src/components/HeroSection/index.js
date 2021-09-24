@@ -20,7 +20,7 @@ const HeroSection = () => {
         setHover(!hover)
     }
     return (
-        <HeroContainer>
+        <HeroContainer id='home'>
         <HeroBg>
             <VideoBg autoPlay loop muted src={Video} type="video/mp4" />     
         </HeroBg>
@@ -29,7 +29,16 @@ const HeroSection = () => {
             <HeroP>A world of knowledge at your fingertips.
                 <br />Learning together from the comfort of your home.</HeroP>
             <HeroBtnWrapper>
-                <Button to="/login" onMouseEnter={onHover} onMouseLeave={onHover} primary="true" dark="true">Learn more</Button>
+                <Button to="online"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact='true'
+                offset={-80}
+                onMouseEnter={onHover} 
+                onMouseLeave={onHover} 
+                primary="true" 
+                dark="true">Learn more</Button>
             </HeroBtnWrapper>
         </HeroContent>
         </HeroContainer>
